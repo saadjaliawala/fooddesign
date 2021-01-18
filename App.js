@@ -19,6 +19,7 @@ import food1 from './src/assets/img/food1.jpg';
 import food2 from './src/assets/img/food2.jpg';
 import food3 from './src/assets/img/food3.jpg';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import LinearGradient from 'react-native-linear-gradient';
 
 const App = () => {
   return (
@@ -43,6 +44,14 @@ const App = () => {
           <Image source={food3} style={{ height: 100, width: 90, marginHorizontal: 10 }} ></Image>
 
         </ScrollView>
+        {/* <View style={{height: 50 , width: 100}} > */}
+        <LinearGradient
+        start={{x: 0, y: 0}} end={{x: 1, y: 0}} 
+        colors={['#462797', '#2FC1BF',]} style={{ borderRadius: 13 , alignSelf: 'center', marginVertical: 40, height: 50 , width: 200 , alignItems: 'center' , justifyContent: 'center' }} > 
+        <Text style={{color: 'white'}}  >Order here...</Text>       
+      </LinearGradient>
+        {/* </View> */}
+        
       </ScrollView>
 
 
